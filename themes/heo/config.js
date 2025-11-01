@@ -17,19 +17,19 @@ const CONFIG = {
   HEO_HERO_BODY_REVERSE: false,
 
   // 英雄区(首页顶部大卡)
-  HEO_HERO_TITLE_1: 'AI Agent 智能体',
-  HEO_HERO_TITLE_2: '从零基础搭建一人公司',
+  HEO_HERO_TITLE_1: '用 AI Agent 打造一人公司',
+  HEO_HERO_TITLE_2: '从零基础到自动化赚钱工作流',
   //HEO_HERO_TITLE_3: 'TANGLY1024.COM',
   //HEO_HERO_TITLE_4: '新版上线',
   //HEO_HERO_TITLE_5: 'NotionNext4.0 轻松定制主题',
   //HEO_HERO_TITLE_LINK: 'https://tangly1024.com',
   // 英雄区遮罩文字
-  HEO_HERO_COVER_TITLE: '随便逛逛',
+  HEO_HERO_COVER_TITLE: '开始探索',
 
   // 英雄区显示三个置顶分类
-  HEO_HERO_CATEGORY_1: { title: '必看精选', url: '/tag/必看精选' },
-  HEO_HERO_CATEGORY_2: { title: '热门文章', url: '/tag/热门文章' },
-  HEO_HERO_CATEGORY_3: { title: '实用教程', url: '/tag/实用教程' },
+  HEO_HERO_CATEGORY_1: { title: '🚀 新手入门', url: '/tag/新手入门' },
+  HEO_HERO_CATEGORY_2: { title: '🛠 实战教程', url: '/tag/实战教程' },
+  HEO_HERO_CATEGORY_3: { title: '💼 赚钱案例', url: '/tag/赚钱案例' },
 
   // 英雄区右侧推荐文章标签, 例如 [推荐] , 最多六篇文章; 若留空白''，则推荐最近更新文章
   HEO_HERO_RECOMMEND_POST_TAG: '推荐',
@@ -38,13 +38,13 @@ const CONFIG = {
 
   // 右侧个人资料卡牌欢迎语，点击可自动切换
   HEO_INFOCARD_GREETINGS: [
-    '你好！我是',
-    '🔍 分享与热心帮助',
-    '🤝 专修交互与设计',
-    '🏃 脚踏实地行动派',
-    '🏠 智能家居小能手',
-    '🤖️ 数码科技爱好者',
-    '🧱 团队小组发动机'
+    '你好，我是',
+    '🤖 AI Agent 创作者',
+    '🧠 自动化效率狂热者',
+    '🏗 一人公司实践者',
+    '⚙️ 工作流搭建爱好者',
+    '📚 数字工具研究员',
+    '🚀 正在用 AI 改变生活'
   ],
 
   // 个人资料底部按钮
