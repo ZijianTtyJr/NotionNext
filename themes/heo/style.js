@@ -61,41 +61,48 @@ const Style = () => {
           transform: translateX(-50%);
         }
       }
-      /* ===== Fix: Banner 图标与标题重合 ===== */
+      /* ===== Fix: #banners 标题与图标重叠 ===== */
 
-/* 1) 右移封面图，让左侧给文字留安全区 */
-#theme-heo .heo-banner .heo-hero-cover img,
-#theme-heo .heo-hero .heo-hero-cover img,
-#theme-heo .heo-banner .heo-hero-cover,
-#theme-heo .heo-hero .heo-hero-cover {
-  object-fit: cover !important;
-  object-position: 70% center !important; /* 可在 60%~85% 间微调 */
-  background-position: 70% center !important; /* 若是 background-image 也能生效 */
+/* 容器建立定位上下文 */
+#banners { position: relative; overflow: hidden; }
+
+/* 1) 标题永远在最上层 */
+#banners #banner-title {
+  position: absolute;
+  z-index: 30 !important;         /* 高于其他一切 */
+  max-width: 72ch;                /* 行宽限制，避免撞右侧图标区 */
 }
 
-/* 2) 左侧渐变遮罩：弱化背景图标，保证标题清晰可读 */
-#theme-heo .heo-banner,
-#theme-heo .heo-hero {
-  position: relative;
-  overflow: hidden;
+/* 2) 图标墙放到下层，并整体右移出“文字安全区” */
+#banners .tags-group-all,
+#banners .tags-group-wrapper,
+#banners .tags-group-icon-pair,
+#banners .tags-group-icon {
+  z-index: 5 !important;          /* 在标题下 */
+  pointer-events: none;           /* 防止遮挡交互（可选） */
 }
 
-#theme-heo .heo-banner::before,
-#theme-heo .heo-hero::before {
+/* 图标墙起始位置从左侧让出空间；clamp 兼容响应式 */
+#banners .tags-group-wrapper {
+  left: clamp(180px, 26vw, 360px) !important; /* 关键：右移 */
+  top: 4rem !important;                       /* 等价于 top-16 */
+}
+
+/* 3) 左侧渐变安全区，弱化背景图标，保证可读性 */
+#banners::before {
   content: "";
   position: absolute;
   inset: 0;
-  z-index: 1;
+  z-index: 20;                   /* 在图标之上，在标题之下 */
   pointer-events: none;
   background: linear-gradient(
     90deg,
-    rgba(255,255,255,0.92) 0%,
-    rgba(255,255,255,0.70) 36%,
+    rgba(255,255,255,0.95) 0%,
+    rgba(255,255,255,0.75) 36%,
     rgba(255,255,255,0.00) 68%
   );
 }
-.dark #theme-heo .heo-banner::before,
-.dark #theme-heo .heo-hero::before {
+.dark #banners::before {
   background: linear-gradient(
     90deg,
     rgba(0,0,0,0.78) 0%,
@@ -104,31 +111,31 @@ const Style = () => {
   );
 }
 
-/* 3) 确保标题位于遮罩之上（不被背景覆盖） */
-#theme-heo .heo-banner .heo-hero-text,
-#theme-heo .heo-hero .heo-hero-text,
-#theme-heo .heo-banner .banner-title,
-#theme-heo .heo-hero .banner-title {
+/* 4) 保险：标题可选择加轻微底色与毛玻璃（想更干净可注释掉） */
+#banners #banner-title .dark\\:text-white,
+#banners #banner-title .text-4xl {
   position: relative;
-  z-index: 2;
+  z-index: 31;
+  display: inline;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+  background: rgba(255,255,255,0.85);
+  border-radius: 8px;
+  padding: .12em .38em;
+  backdrop-filter: blur(6px);
+}
+.dark #banners #banner-title .dark\\:text-white,
+.dark #banners #banner-title .text-4xl {
+  background: rgba(0,0,0,0.55);
 }
 
-/* 4) 给标题区域设置安全边距与最大宽度（避免长文案覆盖到图标区） */
-#theme-heo .heo-banner .heo-hero-text,
-#theme-heo .heo-hero .heo-hero-text {
-  padding-left: clamp(16px, 4vw, 64px);
-  padding-right: clamp(12px, 3vw, 48px);
-  max-width: 720px; /* 或 60–70ch，按视觉调整 */
+/* 5) 大屏可再把图标墙略往右推，避免极端背景压线 */
+@media (min-width: 1280px) {
+  #banners .tags-group-wrapper {
+    left: clamp(220px, 28vw, 420px) !important;
+  }
 }
 
-/* 5) 行宽控制：两行标题不会过长；副标题更易读 */
-#theme-heo .heo-banner h1,
-#theme-heo .heo-hero h1 { max-width: 14ch; }
-#theme-heo .heo-banner h2,
-#theme-heo .heo-hero h2 { max-width: 26ch; }
-
-/* （可选）如果仍觉得靠得近，可再把封面整体再右移一点： */
-/* #theme-heo .heo-banner .heo-hero-cover img { object-position: 80% center !important; } */
     `}</style>
   )
 }
