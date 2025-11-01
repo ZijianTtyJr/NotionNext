@@ -4,12 +4,11 @@ const CONFIG = {
 
   HEO_HOME_BANNER_ENABLE: true,
 
-  HEO_SITE_CREATE_TIME: '2021-09-21', // 建站日期，用于计算网站运行的第几天
+  HEO_SITE_CREATE_TIME: '2025/11/1', // 建站日期，用于计算网站运行的第几天
 
   // 首页顶部通知条滚动内容，如不需要可以留空 []
   HEO_NOTICE_BAR: [
-    { title: '欢迎来到我的博客', url: 'https://blog.tangly1024.com' },
-    { title: '访问文档中心获取更多帮助', url: 'https://docs.tangly1024.com' }
+    //{ title: '欢迎来到我的博客', url: 'https://blog.tangly1024.com' }
   ],
 
   // 英雄区左右侧组件颠倒位置
@@ -18,12 +17,12 @@ const CONFIG = {
   HEO_HERO_BODY_REVERSE: false,
 
   // 英雄区(首页顶部大卡)
-  HEO_HERO_TITLE_1: '分享编程',
-  HEO_HERO_TITLE_2: '与思维认知',
-  HEO_HERO_TITLE_3: 'TANGLY1024.COM',
-  HEO_HERO_TITLE_4: '新版上线',
-  HEO_HERO_TITLE_5: 'NotionNext4.0 轻松定制主题',
-  HEO_HERO_TITLE_LINK: 'https://tangly1024.com',
+  HEO_HERO_TITLE_1: 'AI Agent 智能体',
+  HEO_HERO_TITLE_2: '从零基础搭建一人公司',
+  //HEO_HERO_TITLE_3: 'TANGLY1024.COM',
+  //HEO_HERO_TITLE_4: '新版上线',
+  //HEO_HERO_TITLE_5: 'NotionNext4.0 轻松定制主题',
+  //HEO_HERO_TITLE_LINK: 'https://tangly1024.com',
   // 英雄区遮罩文字
   HEO_HERO_COVER_TITLE: '随便逛逛',
 
@@ -49,15 +48,63 @@ const CONFIG = {
   ],
 
   // 个人资料底部按钮
-  HEO_INFO_CARD_URL1: '/about',
-  HEO_INFO_CARD_ICON1: 'fas fa-user',
-  HEO_INFO_CARD_URL2: 'https://github.com/tangly1024',
-  HEO_INFO_CARD_ICON2: 'fab fa-github',
-  HEO_INFO_CARD_URL3: 'https://www.tangly1024.com',
-  HEO_INFO_CARD_TEXT3: '了解更多',
+  //HEO_INFO_CARD_URL1: '/about',
+  //HEO_INFO_CARD_ICON1: 'fas fa-user',
+  //HEO_INFO_CARD_URL2: 'https://github.com/tangly1024',
+  //HEO_INFO_CARD_ICON2: 'fab fa-github',
+ // HEO_INFO_CARD_URL3: 'https://www.tangly1024.com',
+  //HEO_INFO_CARD_TEXT3: '了解更多',
 
   // 用户技能图标
   HEO_GROUP_ICONS: [
+   
+    //AI
+   {
+      title_1: 'chatgpt',
+      img_1: 'https://res.cloudinary.com/secretsaas/image/upload/ar_1.0,c_pad,dpr_auto,f_auto,fl_progressive,h_80,q_auto:good,w_80/v1/production/npwh00yh5st1xbs8bgimyyiqzuuk',
+      color_1: '#989bf8',
+      title_2: 'claude',
+      img_2: 'https://res.cloudinary.com/secretsaas/image/upload/ar_1.0,c_pad,dpr_auto,f_auto,fl_progressive,h_80,q_auto:good,w_80/v1/production/fit1bh6let2cvpbyfumt3djmc0r7',
+      color_2: '#ffffff'
+    },
+    //AI 智能体
+   {
+      title_1: 'n8n',
+      img_1: 'https://res.cloudinary.com/secretsaas/image/upload/ar_1.0,c_pad,dpr_auto,f_auto,fl_progressive,h_80,q_auto:good,w_80/v1/production/mrgzr5tdj9bn8cm6xvcwslfklcp5',
+      color_1: '#57b6e6',
+      title_2: 'make',
+      img_2: 'https://res.cloudinary.com/secretsaas/image/upload/ar_1.0,c_pad,dpr_auto,f_auto,fl_progressive,h_80,q_auto:good,w_80/v1/production/cdkedczs1bt3ixi5mtkz2f76ds8e',
+      color_2: '#4082c3'
+    },
+
+    //表单类
+   {
+      title_1: 'notion',
+      img_1: 'https://res.cloudinary.com/secretsaas/image/upload/ar_1.0,c_pad,dpr_auto,f_auto,fl_progressive,h_80,q_auto:good,w_80/v1/production/j5avtsi9fmcbxnl3sf7cnak600zg',
+      color_1: '#ffffff',
+      title_2: 'airtable',
+      img_2: 'https://res.cloudinary.com/secretsaas/image/upload/ar_1.0,c_pad,dpr_auto,f_auto,fl_progressive,h_80,q_auto:good,w_80/v1/production/2jjttk8h6p5ktr4e65kl58kkdyyw',
+      color_2: '#ffffff'
+    },
+
+   {
+      title_1: 'elevenlabs',
+      img_1: 'https://res.cloudinary.com/secretsaas/image/upload/ar_1.0,c_pad,dpr_auto,f_auto,fl_progressive,h_80,q_auto:good,w_80/v1/production/ixr0elhsk3ajiz3nlataojp8tu7r',
+      color_1: '#eb6840',
+      title_2: 'Perplexity AI',
+      img_2: 'https://res.cloudinary.com/secretsaas/image/upload/ar_1.0,c_pad,dpr_auto,f_auto,fl_progressive,h_48,q_auto:good,w_48/v1/production/2u1cl5c5mm274tgpjfhr27b9v1o8',
+      color_2: '#8f55ba'
+    },
+    {
+      title_1: 'lovable',
+      img_1: 'https://res.cloudinary.com/secretsaas/image/upload/ar_1.0,c_pad,dpr_auto,f_auto,fl_progressive,h_80,q_auto:good,w_80/v1/production/cspg595rbn9cqou3vulr0uazzjo0',
+      color_1: '#f29e39',
+      title_2: 'lindy-ai',
+      img_2: 'https://res.cloudinary.com/secretsaas/image/upload/ar_1.0,c_pad,dpr_auto,f_auto,fl_progressive,h_80,q_auto:good,w_80/v1/production/4b81m8gjd9k3n6he1qpq07gn42ns',
+      color_2: '#2c51db'
+    },
+    
+   
     {
       title_1: 'AfterEffect',
       img_1: '/images/heo/20239df3f66615b532ce571eac6d14ff21cf072602.webp',
@@ -114,13 +161,14 @@ const CONFIG = {
       img_2: '/images/heo/20231ca53fa0b09a3ff1df89acd7515e9516173302.webp',
       color_2: '#1f1f1f'
     }
+ 
   ],
 
-  HEO_SOCIAL_CARD: true, // 是否显示右侧，点击加入社群按钮
-  HEO_SOCIAL_CARD_TITLE_1: '交流频道',
-  HEO_SOCIAL_CARD_TITLE_2: '加入我们的社群讨论分享',
-  HEO_SOCIAL_CARD_TITLE_3: '点击加入社群',
-  HEO_SOCIAL_CARD_URL: 'https://docs.tangly1024.com/article/how-to-question',
+  HEO_SOCIAL_CARD: false, // 是否显示右侧，点击加入社群按钮
+  //HEO_SOCIAL_CARD_TITLE_1: '交流频道',
+  //HEO_SOCIAL_CARD_TITLE_2: '加入我们的社群讨论分享',
+  //HEO_SOCIAL_CARD_TITLE_3: '点击加入社群',
+  //HEO_SOCIAL_CARD_URL: 'https://docs.tangly1024.com/article/how-to-question',
 
   // 底部统计面板文案
   HEO_POST_COUNT_TITLE: '文章数:',
