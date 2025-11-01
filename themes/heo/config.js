@@ -1,5 +1,5 @@
 const CONFIG = {
-  HEO_HOME_POST_TWO_COLS: false, // 首页博客两列显示，若为false则只显示一列
+  HEO_HOME_POST_TWO_COLS: true, // 首页博客两列显示，若为false则只显示一列
   HEO_LOADING_COVER: true, // 页面加载的遮罩动画
 
   HEO_HOME_BANNER_ENABLE: true,
@@ -24,7 +24,7 @@ const CONFIG = {
   HEO_HERO_TITLE_2: '从零基础到自动化赚钱工作流',
   //HEO_HERO_TITLE_3: 'TANGLY1024.COM',
   //HEO_HERO_TITLE_4: '新版上线',
-  //HEO_HERO_TITLE_5: 'NotionNext4.0 轻松定制主题',
+  HEO_HERO_TITLE_5: '🚀 AI 一人公司 · 公开发射计划',
   //HEO_HERO_TITLE_LINK: 'https://tangly1024.com',
   // 英雄区遮罩文字
   HEO_HERO_COVER_TITLE: '开始探索',
