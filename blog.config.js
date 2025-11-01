@@ -68,7 +68,7 @@ const BLOG = {
     '欢迎来到 AI 创业者实验室, 用 AI Agent 打造一人公司, 从零到一构建自动化工作流, 真实项目与可复制变现路径, 今天一起升级 10x 效率🚀',
 
   // uuid重定向至 slug
-  UUID_REDIRECT: process.env.UUID_REDIRECT || ttue
+  UUID_REDIRECT: process.env.UUID_REDIRECT || true
 }
 
 module.exports = BLOG
