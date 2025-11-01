@@ -8,10 +8,9 @@ const CONFIG = {
 
   // 首页顶部通知条滚动内容，如不需要可以留空 []
   HEO_NOTICE_BAR: [
-    //{ title: '欢迎来到我的博客', url: 'https://blog.tangly1024.com' }
-    { title: '🚀 AI 一人公司计划上线｜入门路线与案例库持续更新', url: '/tag/新手入门' },
-    { title: '📦 领取自动化 SOP 与模板包', url: '/tag/自动化教程' },
-    { title: '👥 加入内测社群：@blogbody_bot', url: '/about' } // 或你的 join 页面
+    { title: '🚀 AI 一人公司计划启动｜系统学习路线已上线', url: '/tag/新手入门' },
+    { title: '📦 自动化 SOP 模板包免费领取', url: '/tag/自动化教程' },
+    { title: '🌐 加入内测社群 @blogbody_bot', url: '/about' }
   ],
 
   // 英雄区左右侧组件颠倒位置
@@ -24,7 +23,7 @@ const CONFIG = {
   HEO_HERO_TITLE_2: '从零基础到自动化赚钱工作流',
   //HEO_HERO_TITLE_3: 'TANGLY1024.COM',
   //HEO_HERO_TITLE_4: '新版上线',
-  HEO_HERO_TITLE_5: '🚀 AI 一人公司 · 公开发射计划',
+  HEO_HERO_TITLE_5: '《AI 一人公司 Build-in-Public 计划｜公开更新》',
   //HEO_HERO_TITLE_LINK: 'https://tangly1024.com',
   // 英雄区遮罩文字
   HEO_HERO_COVER_TITLE: '开始探索',
@@ -36,18 +35,17 @@ const CONFIG = {
 
   // 英雄区右侧推荐文章标签, 例如 [推荐] , 最多六篇文章; 若留空白''，则推荐最近更新文章
   HEO_HERO_RECOMMEND_POST_TAG: '推荐',
-  HEO_HERO_RECOMMEND_POST_SORT_BY_UPDATE_TIME: false, // 推荐文章排序，为`true`时将强制按最后修改时间倒序
+  HEO_HERO_RECOMMEND_POST_SORT_BY_UPDATE_TIME: true, // 推荐文章排序，为`true`时将强制按最后修改时间倒序
   //   HERO_RECOMMEND_COVER: 'https://cdn.pixabay.com/photo/2015/10/30/20/13/sunrise-1014712_1280.jpg', // 英雄区右侧图片
 
   // 右侧个人资料卡牌欢迎语，点击可自动切换
   HEO_INFOCARD_GREETINGS: [
-    '你好，我是',
-    '🤖 AI Agent 创作者',
-    '🧠 自动化效率狂热者',
-    '🏗 一人公司实践者',
-    '⚙️ 工作流搭建爱好者',
-    '📚 数字工具研究员',
-    '🚀 正在用 AI 改变生活'
+    '你好，我是 Lam Buoi 👋',
+    '🤖 AI 一人公司实践者',
+    '🧠 自动化工作流 & SOP 设计',
+    '🏗  AI 工具链系统应用',
+    '⚙️ 真实案例 ｜公开构建 ｜长期主义',
+    '📚 让 AI 帮你赚钱，而不是相反'
   ],
 
   // 个人资料底部按钮
