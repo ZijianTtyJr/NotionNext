@@ -29,7 +29,7 @@ const CONFIG = {
   HEO_HERO_COVER_TITLE: '开始探索',
 
   // 英雄区显示三个置顶分类
-  //HEO_HERO_CATEGORY_1: { title: '🚀 新手入门', url: '/tag/新手入门' },
+  HEO_HERO_CATEGORY_1: { title: '📚AI 一人公司完整指南（专题）', url: '/article/solo-company-collection' },
   //HEO_HERO_CATEGORY_2: { title: '🛠 实战教程', url: '/tag/实战教程' },
   //HEO_HERO_CATEGORY_3: { title: '💼 赚钱案例', url: '/tag/赚钱案例' },
 
