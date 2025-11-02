@@ -29,13 +29,13 @@ const CONFIG = {
   HEO_HERO_COVER_TITLE: '开始探索',
 
   // 英雄区显示三个置顶分类
-  HEO_HERO_CATEGORY_1: { title: '🚀 新手入门', url: '/tag/新手入门' },
-  HEO_HERO_CATEGORY_2: { title: '🛠 实战教程', url: '/tag/实战教程' },
-  HEO_HERO_CATEGORY_3: { title: '💼 赚钱案例', url: '/tag/赚钱案例' },
+  //HEO_HERO_CATEGORY_1: { title: '🚀 新手入门', url: '/tag/新手入门' },
+  //HEO_HERO_CATEGORY_2: { title: '🛠 实战教程', url: '/tag/实战教程' },
+  //HEO_HERO_CATEGORY_3: { title: '💼 赚钱案例', url: '/tag/赚钱案例' },
 
   // 英雄区右侧推荐文章标签, 例如 [推荐] , 最多六篇文章; 若留空白''，则推荐最近更新文章
   HEO_HERO_RECOMMEND_POST_TAG: '推荐',
-  HEO_HERO_RECOMMEND_POST_SORT_BY_UPDATE_TIME: true, // 推荐文章排序，为`true`时将强制按最后修改时间倒序
+  HEO_HERO_RECOMMEND_POST_SORT_BY_UPDATE_TIME: false, // 推荐文章排序，为`true`时将强制按最后修改时间倒序
   //   HERO_RECOMMEND_COVER: 'https://cdn.pixabay.com/photo/2015/10/30/20/13/sunrise-1014712_1280.jpg', // 英雄区右侧图片
 
   // 右侧个人资料卡牌欢迎语，点击可自动切换
